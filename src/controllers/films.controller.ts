@@ -1,9 +1,18 @@
 import { Response, Request } from 'express';
+import { Film } from '../models/film.model';
 
 const getFilms = async (req: Request, res: Response) => {
   try {
     
-    res.json([])
+    const films = await Film.find({}).sort({title: -1}).exec()
+    if (films.length == 0) {
+      return res.status(400).json({
+        message: 'No films',
+        films: []
+      })
+    }
+    
+    res.json(films);
 
   } catch (error) {
     res.status(500).json({
@@ -13,10 +22,11 @@ const getFilms = async (req: Request, res: Response) => {
   }
 }
 
-const getFilmById = async (req: Request, res: Response) => {
+const editFilmById = async (req: Request, res: Response) => {
   try {
-    
-    res.json({})
+    const film = req.body;
+    await Film.findByIdAndUpdate({_id: film._id}, film);
+    res.json(film)
 
   } catch (error) {
     res.status(500).json({
@@ -28,8 +38,17 @@ const getFilmById = async (req: Request, res: Response) => {
 
 const deleteFilmById = async (req: Request, res: Response) => {
   try {
-    
-    res.json({})
+
+    const _id = String(req.params.id);
+    const filmDeleted = Film.findByIdAndRemove({_id})
+    if(!filmDeleted) {
+      return res.status(400).json({
+        message: 'The film does not exist'
+      })
+    }
+    res.json({
+      message: 'Film deleted!'
+    })
 
   } catch (error) {
     res.status(500).json({
@@ -39,4 +58,4 @@ const deleteFilmById = async (req: Request, res: Response) => {
   }
 }
 
-export { getFilms, getFilmById, deleteFilmById };
+export { getFilms, editFilmById, deleteFilmById };

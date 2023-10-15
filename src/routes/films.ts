@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import  { getFilms, getFilmById, deleteFilmById } from '../controllers/films.controller';
+import  { getFilms, editFilmById, deleteFilmById } from '../controllers/films.controller';
 
 const router = Router();
 
 router.get('/', getFilms );
-router.get('/:id', getFilmById );
-router.delete('/:id', deleteFilmById );
+router.put('/edit', editFilmById );
+router.delete('/delete/:id', deleteFilmById );
 
 export default router;
