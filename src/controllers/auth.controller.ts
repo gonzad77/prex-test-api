@@ -6,7 +6,20 @@ const login = async (req: Request, res: Response) => {
     const { username , password } = req.body;
 
     const existsUser = await User.findOne({ username: String(username).toLowerCase() });
-    res.json([])
+    if (!existsUser) {
+      return res.status(400).json({
+        message: 'Username or password are incorrect'
+      })
+    }
+
+    const isValid = password === existsUser.password;
+    if (!isValid) {
+      return res.status(400).json({
+        message: 'Username or password are incorrect'
+      })
+    }
+
+    res.json(existsUser);
 
   } catch (error) {
     res.status(500).json({
