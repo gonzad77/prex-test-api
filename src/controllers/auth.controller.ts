@@ -4,7 +4,7 @@ import { User } from '../models/user.model';
 const login = async (req: Request, res: Response) => {
   try {
     const { username , password } = req.body;
-
+    console.log(username)
     const existsUser = await User.findOne({ username: String(username).toLowerCase() });
     if (!existsUser) {
       return res.status(400).json({

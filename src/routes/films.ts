@@ -5,6 +5,6 @@ const router = Router();
 
 router.get('/', getFilms );
 router.put('/edit', editFilmById );
-router.delete('/delete/:id', deleteFilmById );
+router.post('/delete', deleteFilmById );
 
 export default router;

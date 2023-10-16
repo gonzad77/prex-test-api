@@ -21,4 +21,52 @@
   "date": {
     "$date": "2009-12-18T00:00:00.000Z"
   }
+},
+{
+  "_id": {
+    "$oid": "652cad5153eb2ee444b78a0d"
+  },
+  "title": "Avengers endgame",
+  "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+  "stars": 4,
+  "src": "http://localhost:8000/images/avengersendgame.webp",
+  "date": {
+    "$date": "2019-04-25T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652caeb653eb2ee444b78a0f"
+  },
+  "title": "Divergent",
+  "description": "In a world divided into factions based on personality types, Tris learns that she's been classified as Divergent and won't fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it's too late.",
+  "stars": 2,
+  "src": "http://localhost:8000/images/divergent.webp",
+  "date": {
+    "$date": "2014-04-30T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652cafee53eb2ee444b78a10"
+  },
+  "title": "Doctor Strange",
+  "description": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+  "stars": 2,
+  "src": "http://localhost:8000/images/doctorstrange.webp",
+  "date": {
+    "$date": "2016-10-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652cb0de53eb2ee444b78a12"
+  },
+  "title": "Dune",
+  "description": " Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+  "stars": 5,
+  "src": "http://localhost:8000/images/dune.webp",
+  "date": {
+    "$date": "1995-04-13T03:00:00.000Z"
+  }
 }]

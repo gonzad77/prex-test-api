@@ -38,9 +38,10 @@ const editFilmById = async (req: Request, res: Response) => {
 
 const deleteFilmById = async (req: Request, res: Response) => {
   try {
-
-    const _id = String(req.params.id);
-    const filmDeleted = Film.findByIdAndRemove({_id})
+    const _id = req.body;
+    console.log(_id)
+    const filmDeleted = await Film.findByIdAndRemove(_id)
+    console.log(filmDeleted);
     if(!filmDeleted) {
       return res.status(400).json({
         message: 'The film does not exist'
@@ -52,7 +53,7 @@ const deleteFilmById = async (req: Request, res: Response) => {
 
   } catch (error) {
     res.status(500).json({
-      message: (error instanceof Error) ? error.message : 'Error getting films'
+      message: (error instanceof Error) ? error.message : 'Error deleting films'
     });
     
   }
