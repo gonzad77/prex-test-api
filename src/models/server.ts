@@ -14,7 +14,7 @@ class Server {
   private port: string;
   private apiPaths = {
     films: '/api/films',
-    auth: '/api/auth'
+    auth: '/api/auth',
   };
 
   constructor() {

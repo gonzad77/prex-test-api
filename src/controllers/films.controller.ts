@@ -39,9 +39,8 @@ const editFilmById = async (req: Request, res: Response) => {
 const deleteFilmById = async (req: Request, res: Response) => {
   try {
     const _id = req.body;
-    console.log(_id)
     const filmDeleted = await Film.findByIdAndRemove(_id)
-    console.log(filmDeleted);
+    
     if(!filmDeleted) {
       return res.status(400).json({
         message: 'The film does not exist'
