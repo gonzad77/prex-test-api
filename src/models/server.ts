@@ -19,7 +19,6 @@ class Server {
 
   constructor() {
     this.app = express();
-    this.app.use(express.static('public'))
     this.port = process.env.PORT || '8000';
     
     this.dbConnection();
@@ -44,7 +43,12 @@ class Server {
 
     // CORS
     this.app.use( cors() );
-
+    this.app.use( (req, res, next) => {
+      res.header('Access-Control-Allow-Origin', '*')
+      res.header('Access-Control-Allow-Credentials', 'true');
+      res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+      next()
+    })
     // Body parse
     this.app.use( express.json() );
   }

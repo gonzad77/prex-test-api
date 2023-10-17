@@ -5,7 +5,7 @@
   "title": "Antman",
   "description": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
   "stars": 4,
-  "src": "http://localhost:8000/images/antman.webp",
+  "src": "assets/films/antman.webp",
   "date": {
     "$date": "2015-06-24T00:00:00.000Z"
   }
@@ -17,7 +17,7 @@
   "title": "Avatar",
   "description": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
   "stars": 4,
-  "src": "http://localhost:8000/images/avatar.webp",
+  "src": "assets/films/avatar.webp",
   "date": {
     "$date": "2009-12-18T00:00:00.000Z"
   }
@@ -29,7 +29,7 @@
   "title": "Avengers endgame",
   "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
   "stars": 4,
-  "src": "http://localhost:8000/images/avengersendgame.webp",
+  "src": "assets/films/avengersendgame.webp",
   "date": {
     "$date": "2019-04-25T00:00:00.000Z"
   }
@@ -41,7 +41,7 @@
   "title": "Divergent",
   "description": "In a world divided into factions based on personality types, Tris learns that she's been classified as Divergent and won't fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it's too late.",
   "stars": 2,
-  "src": "http://localhost:8000/images/divergent.webp",
+  "src": "assets/films/divergent.webp",
   "date": {
     "$date": "2014-04-30T00:00:00.000Z"
   }
@@ -53,7 +53,7 @@
   "title": "Doctor Strange",
   "description": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
   "stars": 2,
-  "src": "http://localhost:8000/images/doctorstrange.webp",
+  "src": "assets/films/doctorstrange.webp",
   "date": {
     "$date": "2016-10-28T00:00:00.000Z"
   }
@@ -65,8 +65,56 @@
   "title": "Dune",
   "description": " Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
   "stars": 5,
-  "src": "http://localhost:8000/images/dune.webp",
+  "src": "assets/films/dune.webp",
   "date": {
     "$date": "1995-04-13T03:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ea52ba8a75846bafd30c7"
+  },
+  "title": "Black Widow",
+  "description": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+  "stars": 3,
+  "src": "assets/films/blackwidow.webp",
+  "date": {
+    "$date": "2021-07-08T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ea5bfa8a75846bafd30c8"
+  },
+  "title": "Hancock",
+  "description": "Hancock is a down-and-out superhero who's forced to employ a PR expert to help repair his image when the public grows weary of all the damage he's inflicted during his lifesaving heroics. The agent's idea of imprisoning the antihero to make the world miss him proves successful, but will Hancock stick to his new sense of purpose or slip back into old habits?",
+  "stars": 5,
+  "src": "assets/films/hancock.webp",
+  "date": {
+    "$date": "2008-07-03T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ea641a8a75846bafd30c9"
+  },
+  "title": "King Kong",
+  "description": "In 1933 New York, an overly ambitious movie producer coerces his cast and hired ship crew to travel to mysterious Skull Island, where they encounter Kong, a giant ape who is immediately smitten with the leading lady.",
+  "stars": 2,
+  "src": "assets/films/kingkong.webp",
+  "date": {
+    "$date": "2020-11-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ea6d7a8a75846bafd30ca"
+  },
+  "title": "The Equalizer",
+  "description": "McCall believes he has put his mysterious past behind him and dedicated himself to beginning a new, quiet life. But when he meets Teri, a young girl under the control of ultra-violent Russian gangsters, he can’t stand idly by – he has to help her. Armed with hidden skills that allow him to serve vengeance against anyone who would brutalize the helpless, McCall comes out of his self-imposed retirement and finds his desire for justice reawakened. If someone has a problem, if the odds are stacked against them, if they have nowhere else to turn, McCall will help. He is The Equalizer.",
+  "stars": 3,
+  "src": "assets/films/theequalizer.webp",
+  "date": {
+    "$date": "2014-09-26T00:00:00.000Z"
   }
 }]

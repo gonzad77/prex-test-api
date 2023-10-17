@@ -12,6 +12,8 @@ En este proyecto el nombre de la base de datos debe ser prex-test. El string con
 
 Una vez creada la base de datos vamos a generar dos collection: films y users. En el proyecto dejo dos .json files para cargar la data inicial. En total son 10 films y un usuario (username: prex, password: prex123)
 
+Ingresando a cada una de las collections vamos a tener un boton para agregar data, el cual nos va a permitir seleccionar un archivo .json.
+
 
 # Run
 
